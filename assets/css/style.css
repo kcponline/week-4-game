@@ -1,3 +1,8 @@
+body {
+	background: lavender;
+	padding: 10px;
+}
+
 h1 {
 	font-size: 30px;
 	color: white;
@@ -43,17 +48,30 @@ h1 {
 	float: right;
 }
 
+p {
+	padding: 20px 3px 0 3px;
+}
+
 #game-match-container {
 	width: 200px;
 	height: 100px;
 	background: lightgrey;
+	clear: both;
 }
 
 .game-match {
 	background: lightblue;
 	margin-bottom: 10px;
+
 }
 
 #game-match-counter {
 	bottom: 0;
+}
+
+.button {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
 }
