@@ -1,0 +1,59 @@
+h1 {
+	font-size: 30px;
+	color: white;
+	background: blue; 
+}
+
+#game-title {
+	padding: 30px 3px;
+	display: inline-block;
+	float: left;
+	clear: both;
+}
+
+#game-intro-container {
+	/*display: inline-block;*/
+	width: 350px;
+	height: 300px;
+	padding: 30px 3px;
+	background: beige;
+	clear: both;
+}
+
+#game-dashboard-container {
+	width: 250px;
+	height: 100px;
+	background: red;
+	/*overflow: auto;*/
+}
+
+#game-target {
+	/*padding: 5px 3px;*/
+	width: 70%;
+	height: 100%;
+	background: green;
+	display: inline-block;
+}
+
+#game-scores {
+	/*padding: 10px 3px;*/
+	width: 28%;
+	height: 100%;
+	background: pink;
+	float: right;
+}
+
+#game-match-container {
+	width: 200px;
+	height: 100px;
+	background: lightgrey;
+}
+
+.game-match {
+	background: lightblue;
+	margin-bottom: 10px;
+}
+
+#game-match-counter {
+	bottom: 0;
+}

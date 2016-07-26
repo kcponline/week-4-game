@@ -3,41 +3,70 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CrystalsCollector!</title>
+		<title></title>
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	</head>
 	<body>
+		<h1 id="game-title">CrystalsCollector!</h1>
 
+		<div id="game-intro-container">
 
+			<ul id="game-instruction">
 
+				<li id="intro-start" class="intro">
+					You will be given a random number at the start of the game.
+				</li>	
+				<li id="intro-play" class="intro">
+					There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+				</li>	
+				<li id="intro-win-lose" class="intro">
+					You win the game by matching yhour total score to random number, you lose the game if your total score goes above the random number.
+				</li>	
+				<li id="intro-restart" class="intro">
+					Each time when the game starts, the game will change the value of each crystal.
+				</li>	
 
+			</ul>
+		</div>
 
+		<div id="game-dashboard-container">
 
+			<h1 id="game-target">0</h1>
 
+			<div id="game-scores">
+				<p>Wins: <span id="wins">0</span></p>
+				<p>Losses: <span id="losses">0</span></p>
+			</div>
 
+		</div>	
 
+		<div id="game-play-container">
+			<ul id="game-play-choices">
+				<li>
+					<img id="game-choice-01" src="game-choice-01.jpg">
+				</li>
+				<li>
+					<img id="game-choice-02" src="game-choice-02.jpg">
+				</li>
+				<li>
+					<img id="game-choice-03" src="game-choice-03.jpg">
+				</li>
+				<li>
+					<img id="game-choice-04" src="game-choice-04.jpg">
+				</li>
+			</ul>
+		</div>
 
+		<div id="game-match-container">
 
+			<div id="game-match-heading" class="game-match">Your total score is: </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<h1 id="game-match-counter" class="game-match">0</h1>
 		
-		
-		<script type="text/javascript" src="hangmanGame.js"></script>
+		</div>
+
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
 	</body>
 </html>
