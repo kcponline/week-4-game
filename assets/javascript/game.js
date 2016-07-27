@@ -28,7 +28,18 @@ var button3 = 4;
 
 var button4 = 6;
 
-document.querySelector("#game-target").innerHTML = gameTarget;
+var updateGameVar = function(){
+
+	gameTarget = Math.floor(Math.random() * 120) + 1;
+	document.querySelector("#game-target").innerHTML = gameTarget;
+	button1 = Math.floor(Math.random() * 12) + 1;
+	button2 = Math.floor(Math.random() * 12) + 1;
+	button3 = Math.floor(Math.random() * 12) + 1;
+	button4 = Math.floor(Math.random() * 12) + 1;
+
+};
+
+updateGameVar();
 
 // // pseudo 05: define function to reset variables when webpage load
 
@@ -75,7 +86,7 @@ document.getElementById("game-choice-01").onclick = function(){
 	console.log(totalAdded);
 	
 	if (totalAdded == gameTarget){
-		gameTarget = 63;
+		updateGameVar();
 		totalAdded = 0;
 		wins++;
 		document.querySelector("#wins").innerHTML = wins;
@@ -84,7 +95,7 @@ document.getElementById("game-choice-01").onclick = function(){
 		document.getElementById("game-alert").innerHTML = "You Won!";
 
 	}else if (totalAdded > gameTarget){
-		gameTarget = 48;
+		updateGameVar();
 		totalAdded = 0;
 		losses++;
 		document.querySelector("#losses").innerHTML = losses;
