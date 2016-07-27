@@ -1,17 +1,18 @@
 body {
-	background: lavender;
+	background: url("../images/knitted-netting.png");
+	/*background: lavender;*/
 	padding: 10px;
 }
 
 h1 {
 	font-size: 30px;
 	color: white;
-	background: blue; 
+	background: darkorange; 
 }
 
 h1, 
 div {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 #game-title {
@@ -28,7 +29,7 @@ div {
 	/*padding: 30px 3px;*/
 	background: beige;
 	clear: both;
-	/*margin-bottom: 40px;*/
+	color: green;
 	overflow: auto;
 }
 
@@ -37,27 +38,29 @@ div {
 }
 
 #game-dashboard-container {
-	width: 500px;
+	width: 250px;
 	height: 100px;
-	background: red;
+	/*background: red;*/
 	overflow: auto;
 }
 
 #game-target {
 	/*padding: 5px 3px;*/
 	width: 65%;
-	height: 80%;
+	height: 100%;
 	background: green;
 	display: inline-block;
-	margin: 3px 10px 0 0;
+	/*margin: 3px 10px 0 0;*/
 	overflow: auto;
+	padding: 5px 3px;
+	color: black;
 }
 
 #game-scores {
 	/*padding: 10px 3px;*/
-	width: 28%;
+	width: 30%;
 	height: 100%;
-	background: pink;
+	background: lightblue;
 	float: right;
 }
 
@@ -70,26 +73,47 @@ p {
 	padding: 10px 3px 0 3px;
 }
 
+li {
+	margin-bottom: 10px;
+}
+
 #game-match-container {
-	width: 500px;
+	width: 180px;
 	height: 100px;
-	background: lightgrey;
-	clear: both;
+	/*background: lightgrey;*/
+	/*clear: both;*/
+}
+
+#game-play-container {
+	margin-bottom: 10px;
 }
 
 .game-match {
-	background: lightblue;
-	margin-bottom: 10px;
+	background: darkgreen;
+	padding: 5px 3px;
+	color: white;
+}
 
+#game-match-container {
+	float: left;
+	margin-top: 10px;
+	height: 120px;
+	overflow: auto;
 }
 
 #game-match-counter {
-	bottom: 0;
+	height: 100%;
 }
+
+/*#game-match-counter {
+	bottom: 0;
+}*/
 
 .button {
 	width: 70px;
 	height: 70px;
 	float: left;
 	margin-right: 10px;
+	/*clear: both;*/
+	/*display: inline-block;*/
 }

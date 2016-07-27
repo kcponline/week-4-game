@@ -1,6 +1,6 @@
 // pseudo 01: check javascript link working
 
-document.write("js link check - to be comment out later");
+// document.write("js link check - to be comment out later");
 
 // pseudo 02: this hw for me is to practice manila js and jq. 
 // Therefore, I intend to do js coding 1st then switch to jq.
@@ -108,7 +108,95 @@ document.getElementById("game-choice-01").onclick = function(){
 
 };
 
+document.getElementById("game-choice-02").onclick = function(){
+	document.getElementById("game-alert").innerHTML = null;
+	numberToAdd = button2;
+	totalAdded += numberToAdd;
+	console.log(gameTarget);
+	console.log(totalAdded);
+	
+	if (totalAdded == gameTarget){
+		updateGameVar();
+		totalAdded = 0;
+		wins++;
+		document.querySelector("#wins").innerHTML = wins;
+		document.querySelector("#game-match-counter").innerHTML = 0;
+		document.querySelector("#game-target").innerHTML = gameTarget;
+		document.getElementById("game-alert").innerHTML = "You Won!";
 
+	}else if (totalAdded > gameTarget){
+		updateGameVar();
+		totalAdded = 0;
+		losses++;
+		document.querySelector("#losses").innerHTML = losses;
+		document.querySelector("#game-match-counter").innerHTML = 0;
+		document.querySelector("#game-target").innerHTML = gameTarget;
+		document.getElementById("game-alert").innerHTML = "You Lost!";
+	}
+
+	document.querySelector("#game-match-counter").innerHTML = totalAdded;
+
+};
+
+document.getElementById("game-choice-03").onclick = function(){
+	document.getElementById("game-alert").innerHTML = null;
+	numberToAdd = button3;
+	totalAdded += numberToAdd;
+	console.log(gameTarget);
+	console.log(totalAdded);
+	
+	if (totalAdded == gameTarget){
+		updateGameVar();
+		totalAdded = 0;
+		wins++;
+		document.querySelector("#wins").innerHTML = wins;
+		document.querySelector("#game-match-counter").innerHTML = 0;
+		document.querySelector("#game-target").innerHTML = gameTarget;
+		document.getElementById("game-alert").innerHTML = "You Won!";
+
+	}else if (totalAdded > gameTarget){
+		updateGameVar();
+		totalAdded = 0;
+		losses++;
+		document.querySelector("#losses").innerHTML = losses;
+		document.querySelector("#game-match-counter").innerHTML = 0;
+		document.querySelector("#game-target").innerHTML = gameTarget;
+		document.getElementById("game-alert").innerHTML = "You Lost!";
+	}
+
+	document.querySelector("#game-match-counter").innerHTML = totalAdded;
+
+};
+
+document.getElementById("game-choice-04").onclick = function(){
+	document.getElementById("game-alert").innerHTML = null;
+	numberToAdd = button4;
+	totalAdded += numberToAdd;
+	console.log(gameTarget);
+	console.log(totalAdded);
+	
+	if (totalAdded == gameTarget){
+		updateGameVar();
+		totalAdded = 0;
+		wins++;
+		document.querySelector("#wins").innerHTML = wins;
+		document.querySelector("#game-match-counter").innerHTML = 0;
+		document.querySelector("#game-target").innerHTML = gameTarget;
+		document.getElementById("game-alert").innerHTML = "You Won!";
+
+	}else if (totalAdded > gameTarget){
+		updateGameVar();
+		totalAdded = 0;
+		losses++;
+		document.querySelector("#losses").innerHTML = losses;
+		document.querySelector("#game-match-counter").innerHTML = 0;
+		document.querySelector("#game-target").innerHTML = gameTarget;
+		document.getElementById("game-alert").innerHTML = "You Lost!";
+	}
+
+	document.querySelector("#game-match-counter").innerHTML = totalAdded;
+
+};
 
 // document.getElementById("game-choice-01").onclick = function(){
 // 	numberToAdd = button1;
