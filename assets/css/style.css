@@ -73,8 +73,10 @@ p {
 	padding: 10px 3px 0 3px;
 }
 
-li {
-	margin-bottom: 10px;
+#game-play-container {
+	/*margin-bottom: 10px;*/
+	overflow: auto;
+	clear: both;
 }
 
 #game-match-container {
@@ -82,10 +84,6 @@ li {
 	height: 100px;
 	/*background: lightgrey;*/
 	/*clear: both;*/
-}
-
-#game-play-container {
-	margin-bottom: 10px;
 }
 
 .game-match {
@@ -96,7 +94,7 @@ li {
 
 #game-match-container {
 	float: left;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	height: 120px;
 	overflow: auto;
 }
