@@ -61,8 +61,13 @@ div {
 	float: right;
 }
 
+h2 {
+	margin: 5px 3px;
+	height: 20px;
+}
+
 p {
-	padding: 20px 3px 0 3px;
+	padding: 10px 3px 0 3px;
 }
 
 #game-match-container {
