@@ -9,22 +9,29 @@
 
 	</head>
 	<body>
-		<h1 id="game-title">CrystalsCollector!</h1>
+		<h1 id="game-title">
+			&lt;h1 #game-title&gt;<br>
+			CrystalsCollector!
+		</h1>
 
 		<div id="game-intro-container">
-
+			&lt;div #game-intro-container&gt;
 			<ul id="game-instruction">
-
+				&lt;ul #game-instruction&gt;
 				<li id="intro-start" class="intro">
+					&lt;li #intro-start .intro&gt;<br>
 					You will be given a random number at the start of the game.
-				</li>	
+				</li>
 				<li id="intro-play" class="intro">
+					&lt;li #intro-play .intro&gt;<br>
 					There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-				</li>	
+				</li>
 				<li id="intro-win-lose" class="intro">
+					&lt;li #intro-win-lose .intro&gt;<br>
 					You win the game by matching yhour total score to random number, you lose the game if your total score goes above the random number.
 				</li>	
 				<li id="intro-restart" class="intro">
+					&lt;li #intro-restart .intro&gt;<br>
 					Each time when the game starts, the game will change the value of each crystal.
 				</li>	
 
@@ -32,10 +39,14 @@
 		</div>
 
 		<div id="game-dashboard-container">
-
-			<h1 id="game-target">0</h1>
-
+			&lt;div #game-dashboard-container&gt;<br>
+			<h1 id="game-target">
+				&lt;h1 #game-target&gt;<br>
+				0
+			</h1>
+				
 			<div id="game-scores">
+				&lt;div #game-scores&gt;
 				<p>Wins: <span id="wins">0</span></p>
 				<p>Losses: <span id="losses">0</span></p>
 			</div>
@@ -45,7 +56,9 @@
 		<!-- <img src="assets/images/game-choice-01.jpeg"> -->
 
 		<div id="game-play-container">
+			&lt;div #game-play-container&gt;
 			<ul id="game-play-choices">
+				&lt;ul #game-play-choices&gt;
 				<li>
 					<img src="assets/images/game-choice-01.jpeg" id="game-choice-01" class="button">
 				</li>
@@ -62,11 +75,17 @@
 		</div>
 
 		<div id="game-match-container">
+			&lt;div #game-match-container&gt;
+			<div id="game-match-heading" class="game-match">
+				&lt;div #game-match-heading&gt;<br>
+				Your total score is: 
+			</div>
 
-			<div id="game-match-heading" class="game-match">Your total score is: </div>
-
-			<h1 id="game-match-counter" class="game-match">0</h1>
-
+			<h1 id="game-match-counter" class="game-match">
+				&lt;div #game-match-counter&gt;<br>
+				0
+			</h1>
+				
 		</div>
 
 		<script type="text/javascript" src="assets/javascript/game.js"></script>
